@@ -92,6 +92,13 @@ export default function App() {
         <main className="flex-1 flex flex-col items-center justify-center px-4 md:px-8 py-10 md:py-16">
           {!selectedProvince ? (
             <div className="text-center space-y-3">
+              <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto">
+                <svg className="w-8 h-8 text-slate-300" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+                </svg>
+              </div>
+              <p className="text-slate-400 text-sm">Pilih provinsi untuk memulai</p>
             </div>
           ) : (
             <div className="w-full max-w-xl text-center">
