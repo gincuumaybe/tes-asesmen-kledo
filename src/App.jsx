@@ -34,7 +34,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    fetch("/indonesia_regions.json")
+    fetch("/data/indonesia_regions.json")
       .then((res) => res.json())
       .then((json) => { setData(json); setLoading(false); })
       .catch((err) => { console.error("Failed to load region data:", err); setLoading(false); });
